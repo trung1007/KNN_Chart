@@ -11,8 +11,8 @@ function chartData() {
                         return point.rain ? 'red' : 'blue'
                     }),
                     pointRadius: 5.5,
-                    showLine: false,
-                    backgroundColor: 'green',
+                    showLine: true,
+                    backgroundColor: 'purple',
                 }
             ]
     }
@@ -20,7 +20,7 @@ function chartData() {
 
 function chartOptions() {
     return {
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         legend:
         {
             labels:
