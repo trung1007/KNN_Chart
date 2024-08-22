@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 
 // Dữ liệu cần truyền
-const data_to_pass_in = { message: 'Hello from Node.js!' };
+const data_to_pass_in = { message: 'Nếu bạn có sẵn telegram thì được đăng ký free nhé！' };
 
 // Chuyển đổi dữ liệu thành chuỗi JSON
 const dataString = JSON.stringify(data_to_pass_in);

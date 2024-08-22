@@ -28,7 +28,13 @@ def make_predictions(list_inputs, algorithm):
 		model_file = 'loaded_models\\tfidf_ANN.h5'
 		return ANN.make_predictions(list_inputs=list_inputs, vectorizer_file=vectorizer_file, model_file=model_file)
 
-data_to_pass_back = make_predictions(['- Em Bán Sim Vina Giống 6- 9 Số AC: 0815.496.000 - Giá Bán: 800,000 ☎️ ☎️  Liên Hệ Mua Sim : 0911929999','aaaaaa'], 'KNN')
+data = json.loads(sys.argv[1])
+
+message = data["message"]
+
+
+
+data_to_pass_back = make_predictions(['- Em Bán Sim Vina Giống 6- 9 Số AC: 0815.496.000 - Giá Bán: 800,000 ☎️ ☎️  Liên Hệ Mua Sim : 0911929999',message], 'KNN')
 
 print(data_to_pass_back)
 
